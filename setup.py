@@ -21,6 +21,7 @@ extensions = [
     ]
 
 setup(
+    packages=['daggen'],
     name='daggen',
     ext_modules=cythonize(extensions, language_level=3)
 )
