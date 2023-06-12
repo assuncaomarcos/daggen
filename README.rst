@@ -51,7 +51,7 @@ You can configure the characteristics of the generated DAGs by parametrizing the
 Following the C implementation, one can set the following parameters:
 
 - `seed`: used to seed the random number generator and ensure reproducibility.
-- `n_tasks`: Number of computation nodes (application tasks) in the DAG.
+- `num_tasks`: Number of computation nodes (application tasks) in the DAG.
 - `min_data`: Minimum amount of data in bytes a task processes
 - `max_data`: Maximum amount of data in bytes a task processes
 - `min_alpha`: Minimum value for the extra parameter (e.g., Amdahl's law parameter)
