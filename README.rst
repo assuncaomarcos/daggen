@@ -1,5 +1,5 @@
 daggen
-==============
+======
 
 A Python port of the `daggen <https://github.com/frs69wq/daggen>`_ tool proposed by Suter & Hunold.
 
@@ -34,7 +34,7 @@ You can alternatively convert the task graph into a NetworkX' DiGraph:
    net_dag.add_edges_from(edges)
 
 Task and edge attributes
--------
+------------------------
 
 Each generated task has two attributes:
 
@@ -45,7 +45,7 @@ Each edge represents a communication from a parent task to a child task and has 
 representing the amount of data transferred from parent to child.
 
 DAG parameters
---------
+--------------
 
 You can configure the characteristics of the generated DAGs by parametrizing the `DAG()`.
 Following the C implementation, one can set the following parameters:
