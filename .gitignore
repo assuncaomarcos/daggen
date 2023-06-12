@@ -24,7 +24,10 @@ share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-MANIFEST
+daggen/dag.c
+daggeb/common.c
+daggen/*.so
+#MANIFEST
 
 # PyInstaller
 #  Usually these files are written by a python script from a template

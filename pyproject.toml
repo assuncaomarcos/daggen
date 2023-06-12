@@ -1,0 +1,74 @@
+# Check the link below for information on this file
+# https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
+[build-system]
+requires = ["setuptools>=53.0.0", "wheel", "Cython>=0.29.21"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "daggen"
+authors = [
+  {name = "Marcos Dias de Assuncao", email = "assuncao@acm.org"}
+]
+description = "A Python Wrapper for the daggen tool proposed by Frederic Suter"
+readme = "README.rst"
+requires-python = ">=3.7, <4"
+license = {file = "LICENSE.txt"}
+keywords = ["daggen", "generator", "graph"]
+maintainers = [
+  {name = "Marcos Dias de Assuncao", email = "assuncao@acm.org"}
+]
+
+# For a list of valid classifiers, see https://pypi.org/classifiers/
+classifiers = [  # Optional
+  # How mature is this project? Common values are
+  #   3 - Alpha
+  #   4 - Beta
+  #   5 - Production/Stable
+  "Development Status :: 3 - Alpha",
+
+  # Indicate who your project is intended for
+  "Intended Audience :: Developers",
+  "Intended Audience :: Information Technology",
+
+  "Topic :: Scientific/Engineering",
+  "Topic :: Software Development :: Libraries",
+
+  # Pick your license as you wish
+  "License :: OSI Approved :: MIT License",
+
+  # Specify the Python versions you support here. In particular, ensure
+  # that you indicate you support Python 3. These classifiers are *not*
+  # checked by "pip install". See instead "python_requires" below.
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3 :: Only",
+]
+version = "0.0.1"
+dependencies = []
+
+# The following would provide a command line executable called `sample`
+# which executes the function `main` from this package when invoked.
+# [project.scripts]  # Optional
+# daggen = "daggen:main"
+
+# List additional groups of dependencies here (e.g. development
+# dependencies). Users will be able to install these using the "extras"
+# syntax, for example:
+#
+#   $ pip install sampleproject[dev]
+#
+# Similar to `dependencies` above, these must be valid existing
+# projects.
+[project.optional-dependencies] # Optional
+dev = ["cython", "networkx", "igraph"]
+test = ["pytest", "coverage"]
+
+[project.urls]
+"Homepage" = "https://github.com/assuncaomarcos/daggen"
+"Bug Reports" = "https://github.com/assuncaomarcos/daggen/issues"
+"Say Thanks!" = "https://saythanks.io/to/assuncaomarcos"
+"Source" = "https://github.com/assuncaomarcos/daggen"

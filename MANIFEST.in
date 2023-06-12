@@ -1,0 +1,7 @@
+include daggen/common.pxd
+include daggen/dag.pxd
+include daggen/common.pyx
+include daggen/dag.pyx
+include daggen/daggen_commons.h
+include daggen/daggen_commons.c
+include daggen/daggen.c
