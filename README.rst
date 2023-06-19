@@ -71,3 +71,12 @@ Following the C implementation, one can set the following parameters:
 
 - `jump_size`:   Maximum number of levels spanned by inter-task communications, which enables DAGs
   with execution paths of multiple lengths.
+
+Examples on Google Colab
+------------------------
+
+A couple examples are available on this Colab notebook:
+
+.. image:: https://colab.research.google.com/assets/colab-badge.svg
+   :target: https://colab.research.google.com/github/https://colab.research.google.com/github/assuncaomarcos/daggen/blob/main/notebooks/daggen_examples.ipynb
+   :alt: Open in Colab
