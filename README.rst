@@ -78,5 +78,5 @@ Examples on Google Colab
 A couple examples are available on this Colab notebook:
 
 .. image:: https://colab.research.google.com/assets/colab-badge.svg
-   :target: https://colab.research.google.com/github/https://colab.research.google.com/github/assuncaomarcos/daggen/blob/main/notebooks/daggen_examples.ipynb
+   :target: https://colab.research.google.com/github/assuncaomarcos/daggen/blob/main/notebooks/daggen_examples.ipynb
    :alt: Open in Colab
