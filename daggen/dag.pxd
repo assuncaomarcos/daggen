@@ -3,8 +3,7 @@
 from . cimport common
 
 __all__ = [
-    "DAG",
-    # "CCRType"
+    "DAG"
 ]
 
 cdef extern from "daggen_commons.c":

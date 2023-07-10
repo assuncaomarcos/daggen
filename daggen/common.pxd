@@ -2,14 +2,6 @@
 
 from libc.stdio cimport FILE
 
-# cdef class CCRType:
-#     cdef public int MIXED=0, N_2, N_LOG_N, N_3
-#
-#     def __init__(self, mixed, n_2, n_log_n, n_3):
-#         self.MIXED = mixed
-#         self.N_2 = n_2
-#         self.N_LOG_N = n_log_n
-#         self.N_3 = n_3
 
 cdef extern from "daggen_commons.h":
     ctypedef struct Global:
@@ -32,13 +24,6 @@ cdef extern from "daggen_commons.h":
         N_2,
         N_LOG_N, # (n2 log(n2) indeed
         N_3
-
-    # ctypedef class CCRType [object complexity_t]:
-    #     cdef:
-    #         int MIXED "MIXED"
-    #         int N_2 "N_2"
-    #         int N_LOG_N "N_LOG_N"
-    #         int N_3 "N_3"
 
     cdef struct _Task:
         int tag
