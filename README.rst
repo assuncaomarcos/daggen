@@ -47,17 +47,17 @@ representing the amount of data transferred from parent to child.
 DAG parameters
 --------------
 
-You can configure the characteristics of the generated DAGs by parametrizing the `DAG()`.
+You can configure the characteristics of the generated DAGs by parametrizing the `DAG()` function.
 Following the C implementation, one can set the following parameters:
 
 - `seed`: used to seed the random number generator and ensure reproducibility.
 - `num_tasks`: Number of computation nodes (application tasks) in the DAG.
-- `min_data`: Minimum amount of data in bytes a task processes
-- `max_data`: Maximum amount of data in bytes a task processes
-- `min_alpha`: Minimum value for the extra parameter (e.g., Amdahl's law parameter)
+- `min_data`: Minimum amount of data in bytes a task processes.
+- `max_data`: Maximum amount of data in bytes a task processes.
+- `min_alpha`: Minimum value for the extra parameter (e.g., Amdahl's law parameter).
 - `max_alpha`:  Minimum value for the extra parameter.
-- `fat`: Width of the DAG, the maximum number of tasks executed concurrently. A small value results in a thin DAG
-  (e.g., chain) with low task parallelism, while a large value creates a fat DAG (e.g., fork-join)
+- `fat`: Width of the DAG, the maximum number of tasks executed concurrently. A small value results in a thin DAG.
+  (e.g., chain) with low task parallelism, while a large value creates a fat DAG (e.g., fork-join).
   with a high degree of parallelism.
 - `density`: Determines the dependencies between tasks of two consecutive DAG levels.
 - `regular`: Regularity of the task distribution between the different levels of the DAG.
