@@ -5,19 +5,19 @@ from libc.stdio cimport stdout
 from typing import Tuple
 
 # Default DAG values obtained from the C implementation
-DEF NUM_TASKS = 100
-DEF FAT = 0.5
-DEF REGULAR = 0.9
-DEF DENSITY = 0.5
-DEF MIN_DATA = 2048
-DEF MAX_DATA =  11264
-DEF MIN_ALPHA = 0.0
-DEF MAX_ALPHA = 0.2
-DEF JUMP_SIZE = 1
-DEF CCR = 0
+cdef int NUM_TASKS = 100
+cdef float FAT = 0.5
+cdef float REGULAR = 0.9
+cdef float DENSITY = 0.5
+cdef int MIN_DATA = 2048
+cdef int MAX_DATA =  11264
+cdef float MIN_ALPHA = 0.0
+cdef float MAX_ALPHA = 0.2
+cdef int JUMP_SIZE = 1
+cdef int CCR = 0
 
-DEF TASK_SIZE_LABEL = "computation"
-DEF DATA_COMM_LABEL = "data"
+cdef str TASK_SIZE_LABEL = "computation"
+cdef str DATA_COMM_LABEL = "data"
 
 cdef extern from "stdlib.h":
     void srand(int seed)

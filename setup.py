@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-"""A setuptools based setup module.
+"""
+A setuptools based setup module.
 
 See:
 https://packaging.python.org/guides/distributing-packages-using-setuptools/
@@ -25,4 +26,3 @@ setup(
     name='daggen',
     ext_modules=cythonize(extensions, language_level=3)
 )
-

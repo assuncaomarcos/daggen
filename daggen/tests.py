@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+""" Tests the Daggen library """
 
 import unittest
 import daggen as dg
