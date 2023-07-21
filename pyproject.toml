@@ -1,7 +1,7 @@
 # Check the link below for information on this file
 # https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
 [build-system]
-requires = ["setuptools>=53.0.0", "wheel", "Cython>=0.29.21"]
+requires = ["setuptools", "wheel", "Cython"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -47,25 +47,14 @@ classifiers = [  # Optional
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3 :: Only",
 ]
-version = "0.0.4"
+
+version = "0.0.5"
+
 dependencies = []
 
-# The following would provide a command line executable called `sample`
-# which executes the function `main` from this package when invoked.
-# [project.scripts]  # Optional
-# daggen = "daggen:main"
-
-# List additional groups of dependencies here (e.g. development
-# dependencies). Users will be able to install these using the "extras"
-# syntax, for example:
-#
-#   $ pip install sampleproject[dev]
-#
-# Similar to `dependencies` above, these must be valid existing
-# projects.
 [project.optional-dependencies] # Optional
 dev = ["cython", "networkx", "igraph"]
-test = ["pytest", "coverage"]
+test = ["coverage"]
 
 [project.urls]
 "Homepage" = "https://github.com/assuncaomarcos/daggen"
